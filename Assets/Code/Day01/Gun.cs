@@ -37,6 +37,7 @@ public class Gun : MonoBehaviour
     private void Shoot()
     {
         GameObject inst = Instantiate(_bulletPrefab, _projectileSpawnpoint.transform.position, Quaternion.identity);
+        _shootingAudioSource.clip = _pistolSFX;
         _shootingAudioSource.Play();
         _lastTimeShot = Time.time;
     }
@@ -44,6 +45,7 @@ public class Gun : MonoBehaviour
     private void ShootSecondary()
     {
         GameObject inst = Instantiate(_bulletPrefab, _projectileSpawnpoint.transform.position, Quaternion.identity);
+        _shootingAudioSource.clip = _shotgunSFX;
         _shootingAudioSource.Play();
         _lastTimeShotSecondary = Time.time;
     }
