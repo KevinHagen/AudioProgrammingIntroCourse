@@ -9,8 +9,8 @@ public class Gun : MonoBehaviour
     [SerializeField] private float _fireRateSecondary = 1f;
     [SerializeField] private GameObject _bulletPrefab = default;
     [SerializeField] private Transform _projectileSpawnpoint = default;
-    [SerializeField] private AudioClip _pistolSFX = default;
-    [SerializeField] private AudioClip _shotgunSFX = default;
+    [SerializeField] private ScriptableAudioEvent _pistolAudioEvent = default;
+    [SerializeField] private ScriptableAudioEvent _shotgunAudioEvent = default;
     
     private float _lastTimeShot;
     private float _lastTimeShotSecondary;
@@ -37,16 +37,14 @@ public class Gun : MonoBehaviour
     private void Shoot()
     {
         GameObject inst = Instantiate(_bulletPrefab, _projectileSpawnpoint.transform.position, Quaternion.identity);
-        _shootingAudioSource.clip = _pistolSFX;
-        _shootingAudioSource.Play();
+        _pistolAudioEvent.Play(_shootingAudioSource);
         _lastTimeShot = Time.time;
     }
     
     private void ShootSecondary()
     {
         GameObject inst = Instantiate(_bulletPrefab, _projectileSpawnpoint.transform.position, Quaternion.identity);
-        _shootingAudioSource.clip = _shotgunSFX;
-        _shootingAudioSource.Play();
+        _shotgunAudioEvent.Play(_shootingAudioSource);
         _lastTimeShotSecondary = Time.time;
     }
 

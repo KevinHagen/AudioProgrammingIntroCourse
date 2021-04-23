@@ -173,8 +173,8 @@ MonoBehaviour:
   _fireRateSecondary: 1
   _bulletPrefab: {fileID: 6898965609549240352, guid: ab0d6907a4daf06489baaa01872802a0, type: 3}
   _projectileSpawnpoint: {fileID: 1840994978}
-  _pistolSFX: {fileID: 8300000, guid: 71bea6b5f693e8e4fb7cd733c683f39f, type: 3}
-  _shotgunSFX: {fileID: 8300000, guid: c797018c96d15fe47b1789c6183e3681, type: 3}
+  _pistolAudioEvent: {fileID: 11400000, guid: 1fde5dc89984dc049a164e54ef3a54c2, type: 2}
+  _shotgunAudioEvent: {fileID: 11400000, guid: 95ab1bd1ba5e4ff49a7c3de9f52137bc, type: 2}
 --- !u!82 &547207201
 AudioSource:
   m_ObjectHideFlags: 0
