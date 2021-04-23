@@ -6,10 +6,14 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     [SerializeField] private float _fireRate = 1f;
+    [SerializeField] private float _fireRateSecondary = 1f;
     [SerializeField] private GameObject _bulletPrefab = default;
     [SerializeField] private Transform _projectileSpawnpoint = default;
+    [SerializeField] private AudioClip _pistolSFX = default;
+    [SerializeField] private AudioClip _shotgunSFX = default;
     
     private float _lastTimeShot;
+    private float _lastTimeShotSecondary;
     private AudioSource _shootingAudioSource;
     
     private void Awake()
@@ -23,6 +27,11 @@ public class Gun : MonoBehaviour
         {
             Shoot();
         }
+        
+        if (Input.GetMouseButton(1) && CanShootSecondary())
+        {
+            ShootSecondary();
+        }
     }
 
     private void Shoot()
@@ -31,9 +40,21 @@ public class Gun : MonoBehaviour
         _shootingAudioSource.Play();
         _lastTimeShot = Time.time;
     }
+    
+    private void ShootSecondary()
+    {
+        GameObject inst = Instantiate(_bulletPrefab, _projectileSpawnpoint.transform.position, Quaternion.identity);
+        _shootingAudioSource.Play();
+        _lastTimeShotSecondary = Time.time;
+    }
 
     private bool CanShoot()
     {
         return _lastTimeShot + (1 / _fireRate) < Time.time; 
+    }
+
+    private bool CanShootSecondary()
+    {
+        return _lastTimeShotSecondary + (1 / _fireRateSecondary) < Time.time; 
     }
 }
