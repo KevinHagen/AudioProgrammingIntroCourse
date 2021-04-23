@@ -35,6 +35,9 @@ public class ScriptableAudioEvent : ScriptableObject
 	[SerializeField] 
 	private float _pitchMax = 1.0f;
 
+	public bool RandomizeVolume => _randomizeVolume;
+	public bool RandomizePitch => _randomizePitch;
+	
 	/// <summary>
 	///		Plays SFX on the audio source.
 	/// </summary>
