@@ -46,9 +46,19 @@ public class ScriptableAudioEvent : ScriptableObject
 			return;
 		}
 
-		source.clip = _clips[0];
-		source.volume = _volume;
-		source.pitch = _pitch;
+		source.clip = _clips[Random.Range(0, _clips.Length)];
+		// we can write either this if statement:
+		// if (_randomizeVolume)
+		// {
+		// 	source.volume = Random.Range(_volumeMin, _volumeMax);
+		// }
+		// else
+		// {
+		// 	source.volume = _volume;
+		// }
+		// or use this, as a more "slick" one-liner, called the ternary operator. Syntax: expression ? true : false;
+		source.volume = _randomizeVolume ? Random.Range(_volumeMin, _volumeMax) : _volume;
+		source.pitch = _randomizePitch ? Random.Range(_pitchMin, _pitchMax) : _pitch;
 		
 		source.Play();
 	}
