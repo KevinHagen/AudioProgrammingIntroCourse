@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bb2f19822b74893b9467091bb3b58de, type: 3}
-  m_Name: PistolSFX
+  m_Name: FootStepSFX
   m_EditorClassIdentifier: 
   _clips:
-  - {fileID: 8300000, guid: 71bea6b5f693e8e4fb7cd733c683f39f, type: 3}
-  - {fileID: 8300000, guid: 71bea6b5f693e8e4fb7cd733c683f39f, type: 3}
+  - {fileID: 8300000, guid: 42e65e088b3f4374e851b8dbd38f3df9, type: 3}
+  - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
+  - {fileID: 8300000, guid: 5a9383dda6cabc047b7a297602e93eb4, type: 3}
+  - {fileID: 8300000, guid: e9714160ce34f2b4ab63ff8c27bd68e1, type: 3}
   _randomizeVolume: 1
-  _volume: 0.75
-  _volumeMin: 0.7
-  _volumeMax: 1
+  _volume: 1
+  _volumeMin: 0.28
+  _volumeMax: 0.48
   _randomizePitch: 1
-  _pitch: 0.47
-  _pitchMin: 0.66
-  _pitchMax: 1
+  _pitch: 1
+  _pitchMin: 0.78
+  _pitchMax: 1.06
