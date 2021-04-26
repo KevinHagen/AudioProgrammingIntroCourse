@@ -175,6 +175,8 @@ MonoBehaviour:
   _projectileSpawnpoint: {fileID: 1840994978}
   _pistolAudioEvent: {fileID: 11400000, guid: 1fde5dc89984dc049a164e54ef3a54c2, type: 2}
   _shotgunAudioEvent: {fileID: 11400000, guid: 95ab1bd1ba5e4ff49a7c3de9f52137bc, type: 2}
+  _gunSfxMixer: {fileID: -3836327362393450348, guid: d45d4f05314d6964abbb76e7065b48b5, type: 2}
+  _footStepSfxMixer: {fileID: -1268210751372885388, guid: d45d4f05314d6964abbb76e7065b48b5, type: 2}
 --- !u!82 &547207201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -184,7 +186,7 @@ AudioSource:
   m_GameObject: {fileID: 547207198}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3836327362393450348, guid: d45d4f05314d6964abbb76e7065b48b5, type: 2}
   m_audioClip: {fileID: 8300000, guid: 71bea6b5f693e8e4fb7cd733c683f39f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

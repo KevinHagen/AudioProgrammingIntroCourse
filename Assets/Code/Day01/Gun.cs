@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Gun : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Gun : MonoBehaviour
     [SerializeField] private Transform _projectileSpawnpoint = default;
     [SerializeField] private ScriptableAudioEvent _pistolAudioEvent = default;
     [SerializeField] private ScriptableAudioEvent _shotgunAudioEvent = default;
+    [SerializeField] private AudioMixerGroup _gunSfxMixer = default;
+    [SerializeField] private AudioMixerGroup _footStepSfxMixer = default;
     
     private float _lastTimeShot;
     private float _lastTimeShotSecondary;
@@ -37,6 +40,7 @@ public class Gun : MonoBehaviour
     private void Shoot()
     {
         GameObject inst = Instantiate(_bulletPrefab, _projectileSpawnpoint.transform.position, Quaternion.identity);
+        _shootingAudioSource.outputAudioMixerGroup = _gunSfxMixer;
         _pistolAudioEvent.Play(_shootingAudioSource);
         _lastTimeShot = Time.time;
     }
@@ -44,6 +48,7 @@ public class Gun : MonoBehaviour
     private void ShootSecondary()
     {
         GameObject inst = Instantiate(_bulletPrefab, _projectileSpawnpoint.transform.position, Quaternion.identity);
+        _shootingAudioSource.outputAudioMixerGroup = _footStepSfxMixer;
         _shotgunAudioEvent.Play(_shootingAudioSource);
         _lastTimeShotSecondary = Time.time;
     }
