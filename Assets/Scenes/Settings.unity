@@ -347,6 +347,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _preview
+      value: 
+      objectReference: {fileID: 189863877}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _previewClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c3bb98dcb0ac64042bb5a947d19177da, type: 3}
     - target: {fileID: 724622931669830616, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_Text
       value: DIALOGUE
@@ -373,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4104246160770824489, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4104246160770824489, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -488,6 +496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 189863875}
   - component: {fileID: 189863876}
+  - component: {fileID: 189863877}
   m_Layer: 5
   m_Name: PreviewAudioSource
   m_TagString: Untagged
@@ -526,7 +535,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.025
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -610,6 +619,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &189863877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189863874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cc9c2aa71e415d9676002fc0dc4fa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxPlayTime: 2
 --- !u!1001 &316293134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -617,6 +639,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _preview
+      value: 
+      objectReference: {fileID: 189863877}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _previewClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3da5afc709f8a854f9393913ffa2c0b5, type: 3}
     - target: {fileID: 724622931669830616, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_Text
       value: MUSIC
@@ -869,10 +899,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 123682972}
+  - {fileID: 1833481640345978482}
   - {fileID: 316293135}
   - {fileID: 1707148203}
-  - {fileID: 1833481640345978482}
+  - {fileID: 123682972}
   - {fileID: 2052775904}
   m_Father: {fileID: 43273638}
   m_RootOrder: 1
@@ -981,6 +1011,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _preview
+      value: 
+      objectReference: {fileID: 189863877}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _previewClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 71bea6b5f693e8e4fb7cd733c683f39f, type: 3}
     - target: {fileID: 724622931669830616, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_Text
       value: SFX
@@ -1312,6 +1350,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _preview
+      value: 
+      objectReference: {fileID: 189863877}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _previewClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a805e3ccfc80d5341a83d510c93aa1eb, type: 3}
     - target: {fileID: 3873121109784215821, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1334,7 +1380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4104246160770824489, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4104246160770824489, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: m_AnchorMax.x

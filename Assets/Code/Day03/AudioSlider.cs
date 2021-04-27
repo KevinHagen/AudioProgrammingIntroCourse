@@ -15,6 +15,10 @@ namespace Code.Day03
 		[SerializeField] 
 		private Text _currentValueText = default;
 
+		[Header("Audio Preview")] [SerializeField]
+		private AudioClip _previewClip;
+		[SerializeField] private SettingsPreviewAudio _preview;
+
 		private void Awake()
 		{
 			_slider.onValueChanged.AddListener(OnSliderValueChanged);
@@ -29,6 +33,8 @@ namespace Code.Day03
 		{
 			float displayValue = value * 100f;
 			_currentValueText.text = displayValue.ToString("000") + "%";
+			
+			_preview.Play(_previewClip);
 		}
 	}
 }
