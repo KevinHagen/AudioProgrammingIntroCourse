@@ -31,6 +31,8 @@ namespace Code.Day03
 
 			_mixerGroup.audioMixer.GetFloat(_config.VolumeKey, out _maxValue);
 			_minMaxDelta = _maxValue - _minValue;
+
+			UpdateMixerAndUI(_slider.value);
 		}
 
 		private void OnDestroy()
@@ -39,6 +41,17 @@ namespace Code.Day03
 		}
 
 		private void OnSliderValueChanged(float value)
+		{
+			UpdateMixerAndUI(value);
+			PlayPreviewAudio();
+		}
+
+		private void PlayPreviewAudio()
+		{
+			_preview.Play(_previewClip, _mixerGroup);
+		}
+
+		private void UpdateMixerAndUI(float value)
 		{
 			// _maxValue: +20 dB
 			// _minValue: -40 dB
@@ -50,7 +63,6 @@ namespace Code.Day03
 			float displayValue = value * 100f;
 			_currentValueText.text = displayValue.ToString("000") + "%";
 			_mixerGroup.audioMixer.SetFloat(_config.VolumeKey, mixerVolume);
-			_preview.Play(_previewClip, _mixerGroup);
 		}
 	}
 }
