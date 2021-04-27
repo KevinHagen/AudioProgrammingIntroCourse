@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 namespace Code.Day03
@@ -15,6 +16,8 @@ namespace Code.Day03
 		[SerializeField] 
 		private Text _currentValueText = default;
 
+		[SerializeField] private AudioMixerGroup _mixerGroup;
+		
 		[Header("Audio Preview")] [SerializeField]
 		private AudioClip _previewClip;
 		[SerializeField] private SettingsPreviewAudio _preview;
@@ -34,7 +37,7 @@ namespace Code.Day03
 			float displayValue = value * 100f;
 			_currentValueText.text = displayValue.ToString("000") + "%";
 			
-			_preview.Play(_previewClip);
+			_preview.Play(_previewClip, _mixerGroup);
 		}
 	}
 }

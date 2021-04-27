@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 namespace Code.Day03
 {
@@ -15,13 +16,14 @@ namespace Code.Day03
 			_source = GetComponent<AudioSource>();
 		}
 
-		public void Play(AudioClip clip)
+		public void Play(AudioClip clip, AudioMixerGroup mixerGroup)
 		{
 			if (_source.isPlaying)
 			{
 				return;
 			}
 
+			_source.outputAudioMixerGroup = mixerGroup;
 			_source.clip = clip;
 			_source.Play();
 			_currentPlaytime = 0f;

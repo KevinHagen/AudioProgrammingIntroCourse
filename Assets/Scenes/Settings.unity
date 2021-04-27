@@ -1355,6 +1355,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 189863877}
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _mixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 17752b8bbf64d0c4c93a2e711468006a, type: 2}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _previewClip
       value: 
       objectReference: {fileID: 8300000, guid: a805e3ccfc80d5341a83d510c93aa1eb, type: 3}
