@@ -25,6 +25,11 @@ namespace Code.Day03
 		[SerializeField] private float _minValue = -40f;
 		private float _maxValue;
 		private float _minMaxDelta;
+
+		public float MaxValue => _maxValue;
+		public float MinMaxDelta => _minMaxDelta;
+		public Slider Slider => _slider;
+		public bool Load { get; set; }
 		
 		private void Awake()
 		{
@@ -44,7 +49,10 @@ namespace Code.Day03
 		private void OnSliderValueChanged(float value)
 		{
 			UpdateMixerAndUI(value);
-			PlayPreviewAudio();
+			if (!Load)
+			{
+				PlayPreviewAudio();
+			}
 		}
 
 		private void PlayPreviewAudio()
