@@ -558,6 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4104246160770824489}
+  - component: {fileID: 64222257768260735}
   m_Layer: 5
   m_Name: AudioSlider
   m_TagString: Untagged
@@ -589,6 +590,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1263.5693, y: 186.7223}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &64222257768260735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7384297343413553941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f90de0b2a134b8cb58622ab0b1664ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 7194418021898007}
+  _currentValueText: {fileID: 1670041390229033961}
 --- !u!1 &7463977670365745633
 GameObject:
   m_ObjectHideFlags: 0
