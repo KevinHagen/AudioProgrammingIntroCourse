@@ -348,9 +348,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _config
+      value: 
+      objectReference: {fileID: 11400000, guid: fc468ad1c64c93340aebd9c4f080d426, type: 2}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _preview
       value: 
       objectReference: {fileID: 189863877}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _mixerGroup
+      value: 
+      objectReference: {fileID: -4986549763611190842, guid: 17752b8bbf64d0c4c93a2e711468006a, type: 2}
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _previewClip
       value: 
@@ -535,7 +543,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.025
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -640,9 +648,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _config
+      value: 
+      objectReference: {fileID: 11400000, guid: 242fd70cbe507624bab110d79cb61818, type: 2}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _preview
       value: 
       objectReference: {fileID: 189863877}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _mixerGroup
+      value: 
+      objectReference: {fileID: 6734422080690701844, guid: 17752b8bbf64d0c4c93a2e711468006a, type: 2}
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _previewClip
       value: 
@@ -1012,9 +1028,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _config
+      value: 
+      objectReference: {fileID: 11400000, guid: ec9cc7fd8ead3e04784c93316b382e65, type: 2}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _preview
       value: 
       objectReference: {fileID: 189863877}
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _mixerGroup
+      value: 
+      objectReference: {fileID: 3530508409151615991, guid: 17752b8bbf64d0c4c93a2e711468006a, type: 2}
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _previewClip
       value: 
@@ -1350,6 +1374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855760063}
     m_Modifications:
+    - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
+      propertyPath: _config
+      value: 
+      objectReference: {fileID: 11400000, guid: c95f747bd7fee514291b64f5cf3f77ee, type: 2}
     - target: {fileID: 64222257768260735, guid: 69084527ac5d588428b8e8817b9e240e, type: 3}
       propertyPath: _preview
       value: 
